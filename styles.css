@@ -42,6 +42,17 @@
     .img-wrapper img {
         border-radius: 0px !important;
     }
+    .contents{
+        width: 100% !important;
+        padding:0 !important;
+    }
+    .landing-menu{
+        width: auto !important;
+    }
+    .landing-menu li a {
+        border-radius: 0px !important;
+        width: auto !important;
+    }
   }
 
 
