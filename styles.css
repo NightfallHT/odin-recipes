@@ -1,5 +1,8 @@
+/* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* CUSTOM SCROLLBAR SETTINGS */
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
@@ -16,21 +19,26 @@
     background: rgb(15, 14, 27);
     border-radius: 10px;
   }
+
+/* MEDIA SETTINGS */
+
 @media screen and (max-width: 1200px) {
     .container {
         min-width: 60vw;
         margin-left: 5vw;
         margin-right: 5vw;
     }
-  }
-  @media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 800px) {
     .container {
         min-width: 70vw;
         margin-left: 2vw;
         margin-right: 2vw;
     }
-  }
-  @media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 500px) {
       ::-webkit-scrollbar{
           width: 0px;
       }
@@ -53,8 +61,9 @@
         border-radius: 0px !important;
         width: auto !important;
     }
-  }
+}
 
+/* CSS RESET */
 
 html {
     -webkit-margin-top-collapse: collapse;
@@ -70,10 +79,8 @@ body {
     padding: 0 !important;
 }
 
-#landing-logo {
-    height:auto;
-    width: 100%;
-}
+/* MAIN LAYOUT */
+
 .main {
     position: absolute;
     width: 100%;
@@ -81,7 +88,6 @@ body {
     top: 0;
     bottom:0;
 }
-
 .container {
     background-color:rgb(20, 21, 31);
     position:fixed;
@@ -93,7 +99,6 @@ body {
     left: 50vw;
     transform: translate(-50%,0);
     margin:auto;
-    /* background-color: lawngreen; */
 }
 .contents {
     padding-left: 4vw;
@@ -117,19 +122,24 @@ body {
     transform: translateY(-50%);
 
 }
+img.center {
+    display: block;
+}
+
 .description {
-    /* padding-left: 100px;
-    padding-right: 100px; */
     padding-right: 4vw !important;
     padding-left: 4vw !important;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
-    /* text-align: center; */
     text-align: justify;
     font-style: italic;
     font-weight: 100;
     color:rgba(184, 186, 199, 0.822);
+}
+#landing-logo {
+    height:auto;
+    width: 100%;
 }
 h1,
 .center {
@@ -146,29 +156,8 @@ h2 {
     font-weight: 700;
     text-decoration: underline;
 }
-img.center {
-    display: block;
-}
 
-a {
-    font-family: 'Comfortaa', sans-serif;
-    text-decoration: none;
-    background-color: rgb(255, 196, 0);
-    color: rgb(58, 41, 14);
-    font-weight: 700;
-    text-align: center;
-}
-#home-btn {
-    width: auto;
-    display: block;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 10px;
-    border-radius: 20px;
-}
-
+/* LISTS */
 
 ol, ul {
     margin-left: 5vw;
@@ -225,6 +214,26 @@ ol li:not(:last-child){
     border-radius: 25px;
 }
 
+/* BUTTONS */
+
+a {
+    font-family: 'Comfortaa', sans-serif;
+    text-decoration: none;
+    background-color: rgb(255, 196, 0);
+    color: rgb(58, 41, 14);
+    font-weight: 700;
+    text-align: center;
+}
+#home-btn {
+    width: auto;
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 20px;
+}
 a:hover {
     background-color: #ffd311;
 }
